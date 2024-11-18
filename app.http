@@ -1,0 +1,35 @@
+API-1 Add user details
+###
+
+POST http://localhost:3000/users
+Content-Type: application/json
+
+{
+    "firstName": "srikanth",
+    "lastName": "yadav",
+    "email": "srikanth@gmail.com",
+    "department": "cse"
+}
+
+
+API-2 Update user details
+###
+
+PUT http://localhost:3000/user/3890983d-5eba-4f4e-a289-d670cf0b92ce
+Content-Type: application/json
+
+{
+    "firstName": "kongala",
+    "lastName": "srikanth"
+}
+
+
+API-3 Delete user details
+###
+
+DELETE http://localhost:3000/user/3890983d-5eba-4f4e-a289-d670cf0b92ce
+
+API-4 Get all users details
+###
+
+GET  http://localhost:3000/users
